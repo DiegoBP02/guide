@@ -135,7 +135,7 @@
   },[state.user])
 - change user from initial state to JSON.parse(localStorage.getItem("user")) || null
 - login button disabled if fetching
-- in app and topbar, get use from useContext(Context)
+- in app and topbar, get user from useContext(Context)
 
 #### logout using context
 
@@ -148,7 +148,7 @@
 
 #### creating new post using axios
 
-- wrise.jsx
+- write.jsx
 - create title usestate empty string
 - create desc usestate empty string
 - create file usestate empty string
@@ -241,7 +241,7 @@
   }
 - add onClick on update button that fires handleUpdate
 - create async handleUpdate const, copy and paste the code from handleDelete
-- change axios method to post
+- change axios method to put
 - add title and desc to the request
 - remove data
 - setUpdateMode to false
