@@ -1,9 +1,11 @@
 #### a very big sum
+
 - declare a variable
 - create a loop that checks the typeof each item in the array, if it is equal to a number, then add the current position of the array to the variable
 - return the sum
 
 #### diagonal difference
+
 - variable for each one of the diagonals
 - loop through rows and columns
 - i = j
@@ -11,11 +13,13 @@
 - return math abs
 
 #### plus minus
+
 - variable for positive, negative, zero
 - do a forEach loop in the array, then sort them and add 1 to right counter
 - log using toFixed and "\n"
 
 #### staircase
+
 - create a loop i
 - empty variable
 - create a loop j
@@ -28,6 +32,7 @@
 3,0 3,1 3,2 3,3
 
 #### mini max sum
+
 - declare max and min variable equal to arr[0]
 - declare sum and length
 - create a for loop to get the max and min number of the array
@@ -38,6 +43,7 @@
 - log minSum and maxSum
 
 #### birthday cake candles
+
 - declare max and counter
 - do a forEach loop
 - check if item is bigger than max, if it is, set max equal to item and set the counter to 1
@@ -45,6 +51,7 @@
 - return counter
 
 #### time coversion
+
 // find if AM or PM
 // if AM are 12 set it to 00
 // if PM are more than 12 add 12 to it
@@ -64,3 +71,11 @@
   // AM case
 - if position [0] of times is equal to 12, then position [0] of times is equal to 00
 - return times.join(":")
+
+#### compare the triplets
+
+- create var for alice and bob
+- for loop
+- if alice is bigger, add to alice
+- do the same for bob
+- return both in an array, alice comes first

@@ -64,7 +64,6 @@
 - create models folder and Model.js file
 - create schema with the proper values
   module.exports = mongoose.model("Model", ModelSchema)
-  -s
 
 #### Create routes structures
 

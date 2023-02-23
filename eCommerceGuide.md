@@ -83,7 +83,7 @@
 - create const oneDay equal to 24h in ms
 - send back res.cookie("token", token, {
   httpOnly:true,
-  expires: new Date(Date.now() = oneDay)
+  expires: new Date(Date.now() + oneDay)
   })
 - test in postman if the cookie has appeared
 
@@ -202,7 +202,7 @@
 
 #### ShowCurrentUser controller
 
-- add authenticaUser in showMe routes
+- add authenticateUser in showMe routes
 - in the show current user, send back req.user as response
 
 #### UpdatePassword controller
@@ -469,7 +469,7 @@
 #### Remove all reviews // when you remove a product, the reviews are removed too
 
 - productModels
-  Product.Schema.pre("remove", async function (){
+  ProductSchema.pre("remove", async function (){
   await this.model("Review").deleteMany({product:this.\_id})
   })
 
